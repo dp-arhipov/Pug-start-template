@@ -1,0 +1,43 @@
+//.contact-modal {
+//
+//  &__content {
+//    padding: 37px;
+//  }
+//  &__title{
+//    @include setTypography(h2,regular);
+//    color: $c-accent;
+//    margin-bottom: $s-xs;
+//  }
+//  &__text{
+//    @include setTypography(p1);
+//    margin-bottom: $s-large;
+//  }
+//
+//  &__btn-close{
+//    width: 20px;
+//    height: 20px;
+//    position: absolute;
+//    top:-40px;
+//    right:-20px;
+//  }
+//
+//}
+//
+//.contact-form{
+//  &__input{
+//    @include setTypography(p1);
+//    padding: 10px 20px;
+//    margin-bottom: $s-medium;
+//    &:focus,&:active{
+//      //border-color: red;
+//    }
+//  }
+//
+//  &__footer{
+//    display: flex;
+//    align-items: center;
+//    justify-content: space-between;
+//  }
+//}
+//
+//

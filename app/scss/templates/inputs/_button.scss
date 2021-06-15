@@ -1,0 +1,15 @@
+@use "../../core" as *;
+
+@mixin button($behavior-map: ()) {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 1rem 2rem;
+
+  background-color: #c6c6c6;
+  @include setBehavior($behavior-map);
+}

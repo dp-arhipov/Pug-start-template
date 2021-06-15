@@ -1,0 +1,20 @@
+.header.pt-4
+    .container
+        nav.navbar.navbar-expand-lg.px-2.py-2.navbar-light.bg-light.shadow.rounded
+            .container-fluid
+                a.navbar-brand.fs-3.fw-bold(href="/")
+                    span.text-primary in
+                    | Web
+                button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation")
+                    span.navbar-toggler-icon
+                #navbarToggler.collapse.navbar-collapse.fs-6.fw-normal
+                    ul.navbar-nav.nav-pills.col.justify-content-center
+                        li.nav-item
+                            a.nav-link(aria-current="page" href="/") Главная
+                        li.nav-item
+                            a.nav-link(href="/pages/services.html") Услуги
+                        li.nav-item
+                            a.nav-link(href="/pages/portfolio.html") Портфолио
+                    .lang.d-flex
+                        a.nav-link.link-dark.active.pe-1(href="/") RU
+                        a.nav-link.link-dark(href="/") EN

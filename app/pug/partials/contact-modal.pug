@@ -1,0 +1,23 @@
+#contactModal.modal.fade(tabindex='-1', aria-labelledby='contactModalLabel', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .modal-header
+                h5#exampleModalLabel.modal-title Оставить заявку
+                p Заполните форму ниже и я свяжусь с вами в ближайшее время
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body
+                form
+                    input#contactEmail.contact-form__input.form-control(type="text" placeholder="Ваше имя")
+                    input#contactPassword.contact-form__input.form-control(type="email" placeholder="Ваш email")
+                    input#contactPhone.contact-form__input.form-control(type="telephone" placeholder="Ваш телефон")
+
+            .modal-footer
+                li.contacts__item
+                    a(href="tel:+79254738295").contacts__phone +79254738295
+                li.contacts__item
+                    a(href="mailto:mymail@gmail.com").contacts__mail mymail@gmail.com
+
+
+
+
+

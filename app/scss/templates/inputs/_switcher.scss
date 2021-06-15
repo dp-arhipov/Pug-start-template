@@ -1,0 +1,51 @@
+@use "../../core" as *;
+
+@mixin switcher($behavior-map:()) {
+  display: flex;
+  //overflow: hidden;
+  border: 1px solid black;
+
+  @include setBehavior($behavior-map, default);
+
+  & > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    //@include setBehavior($behavior-map,default);
+    //&:first-of-type input {
+    //  border-radius: $border-radius 0 0 $border-radius;
+    //}
+    //&:last-of-type input {
+    //  border-radius:0 $border-radius $border-radius 0;
+    //}
+  }
+
+  input {
+    appearance: none;
+    flex-grow: 1;
+    min-height: 2rem;
+    height: 100%;
+
+    &:checked {
+
+      background-color: black;
+
+      @include setBehavior($behavior-map, checked, background-color);
+    }
+  }
+
+  input:checked + * {
+    color: white;
+    @include setBehavior($behavior-map, checked, color, font-size);
+  }
+
+  input + * {
+    position: absolute;
+    @include setBehavior($behavior-map, default, color);
+  }
+
+}
+
+

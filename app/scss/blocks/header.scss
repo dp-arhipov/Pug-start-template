@@ -1,0 +1,19 @@
+.header {
+
+  .nav-item {
+    &:hover {
+      border-radius: $nav-pills-border-radius;
+      background-color: $nav-pills-hover-bg-color;
+    }
+  }
+
+  .lang {
+    .nav-link {
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+
+
+}

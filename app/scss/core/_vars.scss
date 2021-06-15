@@ -1,0 +1,76 @@
+//цвета
+$c-black: #0a0a0a;
+$c-text-muted: #acacac;
+$c-white: #ffffff;
+$c-el-hover: #e8e8e8;
+$c-accent: #f11f6e;
+
+//$c-surface: #fd7d36;
+//$c-surface-inactive: #dcdcdc;
+//$c-background: #ffffff;
+
+//$c-text-placeholder: #7b7b7b;
+
+
+//размеры
+$rem: 16px;
+$min-content-width: 560px;
+$max-content-width: 560px;
+$content-padding: 16px;
+$radius-small: 4px;
+$radius-large: 16px;
+$box-shadow: 0px 0px 25px 0px rgba($c-black, 0.1);
+
+
+//отступы
+$s-xxs: 4px;
+$s-xs: 8px;
+$s-small: 12px;
+$s-medium: 18px;
+$s-large: 24px;
+$s-xxlarge: 40px;
+
+
+//анимация
+$transition-duration: 0.2s;
+$transition-type: ease;
+
+
+//медиа
+//$grid-breakpoints: (
+//        xs: 0,
+//        sm: 576px,
+//        md: 768px,
+//        lg: 992px,
+//        xl: 1200px,
+//        xxl: 1400px
+//);
+//
+//$container-max-widths: (
+//        sm: 540px,
+//        md: 720px,
+//        lg: 960px,
+//        xl: 1140px,
+//        xxl: 1320px
+//)
+
+//шрифты
+//$max-font-size: 16px;
+//$min-font-size: 16px;
+
+
+//bootstrap vars
+
+$input-btn-focus-width: 0;
+$input-btn-focus-box-shadow: none;
+
+
+//$modal-content-bg: $c-white;
+//$modal-backdrop-bg: #ce137f;
+//$modal-backdrop-opacity: 0.9;
+//$modal-content-border-radius: $radius-small;
+//$modal-inner-padding: 3rem;
+$btn-close-color: #ffffff;
+$input-focus-border-color: #a3a3a3;
+
+//$border-radius: 1px;
