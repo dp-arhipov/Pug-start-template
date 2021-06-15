@@ -1,0 +1,20 @@
+//@use "../core" as *;
+//
+//.social {
+//  display: flex;
+//  align-items: center;
+//
+//  &__title {
+//    @include setTypography(p1, bold);
+//    padding-right: $s-medium;
+//  }
+//
+//  &__icons {
+//    color: $c-text-muted;
+//  }
+//
+//  &__link {
+//    @include setTypography(h4, regular);
+//    padding-right: $s-xs;
+//  }
+//}

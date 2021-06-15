@@ -1,0 +1,100 @@
+//размеры в виде переменных
+//стилизация компонентов (кнопки)
+
+//@import 'core';
+//@import 'templates';
+$primary: #ef0a91;
+$secondary: rgba(88, 88, 88, 0.49);
+$light: #FFF8F9FA;
+$dark: rgb(29, 29, 29);
+
+
+$box-shadow: .5rem .5rem 1rem rgba(black, .1) !default;
+
+
+$border-radius: 4px;
+//$navbar-padding-x: 48px;
+//$navbar-padding-y: 20px;
+$navbar-nav-link-padding-x: 24px;
+//$nav-link-padding-y: 0.3rem;
+
+$navbar-light-color: $dark;
+$navbar-light-hover-color: $dark;
+$navbar-light-active-color: $light;
+$navbar-light-brand-color: $dark;
+$navbar-light-brand-hover-color: $dark;
+
+
+$nav-pills-border-radius: 20px;
+$nav-pills-hover-bg-color: #f3f3f3;
+
+$input-btn-padding-y: 0.7rem;
+$input-btn-padding-x: 3rem;
+$input-btn-border-width: 2px;
+$btn-white-space: nowrap;
+$input-btn-font-size: 1.5rem;
+$btn-outline-primary-hover-color: $light;
+$btn-outline-primary-color: $dark;
+
+
+$link-decoration: none;
+
+//$input-btn-focus-color: $white;
+//@import "~bootstrap/scss/functions";
+//@import "~bootstrap/scss/variables";
+//@import "~bootstrap/scss/mixins";
+//@import "~bootstrap/scss/utilities";
+//@import "~bootstrap/scss/bootstrap-grid"; // Optional Bootstrap Grid
+@import "~bootstrap";
+@import "./core/_fontello.scss";
+
+//@import "~bootstrap/scss/bootstrap-reboot';
+
+//@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+//$fa-font-path: "../fonts";//переопределили путь до папки со шрифтами
+//
+//@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+//@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+
+//импорт блоков
+
+
+//@import "~bootstrap/scss/dropdown";
+//@import "~bootstrap/scss/close";
+//@import "~bootstrap/scss/modal";
+//@import "~bootstrap/scss/forms";
+//
+//@import "~bootstrap/scss/navbar";
+//@import "~bootstrap/scss/nav";
+//@import "~bootstrap/scss/transitions";
+//@import "~bootstrap/scss/accordion";
+@import 'blocks/*';
+
+body {
+  //@include setTypography(body);
+  //@include setTransition();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
