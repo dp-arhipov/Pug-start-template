@@ -1,0 +1,21 @@
+.footer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FF0000;
+
+  ul {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    li {
+      cursor: pointer;
+      display: flex;
+      margin-top: 10%;
+      align-items: center;
+    }
+  }
+}

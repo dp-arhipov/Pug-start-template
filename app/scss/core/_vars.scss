@@ -1,0 +1,47 @@
+//цвета
+$c-black: #0a0a0a;
+$c-text-muted: #acacac;
+$c-white: #ffffff;
+$c-el-hover: #e8e8e8;
+$c-accent: #f11f6e;
+
+//размеры
+$rem: 16px;
+$min-content-width: 560px;
+$max-content-width: 560px;
+$content-padding: 16px;
+$radius-small: 4px;
+$radius-large: 16px;
+$box-shadow: 0px 0px 25px 0px rgba($c-black, 0.1);
+
+
+//отступы
+$s-xxs: 4px;
+$s-xs: 8px;
+$s-small: 12px;
+$s-medium: 18px;
+$s-large: 24px;
+$s-xxlarge: 40px;
+
+
+//анимация
+$transition-duration: 0.2s;
+$transition-type: ease;
+
+
+//медиа
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+
+
+//шрифты
+$max-font-size: 24px;
+$min-font-size: 16px;
+

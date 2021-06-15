@@ -1,0 +1,25 @@
+@use "../../core" as *;
+
+@mixin checkbox($behavior-map:()) {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  &:after {
+    content: "\f00c";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.7rem;
+    opacity: 0;
+  }
+  &:checked:after {
+      opacity: 1;
+      //transform: scale(.6);
+    }
+  @include setBehavior($behavior-map);
+}
+
