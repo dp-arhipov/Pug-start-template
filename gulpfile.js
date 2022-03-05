@@ -28,10 +28,6 @@ const ttf2woff = require('gulp-ttf2woff');// конвертирует шрифт
 const ttf2woff2 = require('gulp-ttf2woff2');// конвертирует шрифты из ttf в woff2
 const imagemin = require('gulp-imagemin');// компрессирует изображения
 
-// Webpack
-const webpack = require('webpack');// добавляет в gulp поддержку webpack
-const webpackStream = require('webpack-stream');
-const webpackConfig = require('./webpack.config');
 
 function browsersync() {
   browserSync.init({
@@ -48,7 +44,6 @@ function browsersync() {
 function scripts() {
   return src('app/js/index.js')
     .pipe(plumber())
-    .pipe(webpackStream(webpackConfig), webpack)
     .pipe(terser()) //--раскомментировать для PROD сборки
     .pipe(rename('app.min.js'))
     .pipe(size())
