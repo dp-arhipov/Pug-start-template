@@ -16,13 +16,13 @@ app/scss/layouts - разметка страниц, соответствуют p
 
 app/scss/pages - стили страниц, соответствуют pug/pages
 
-app/scss/partitials - стили компонентов, соответствуют pug/partitials
+app/scss/partials - стили компонентов, соответствуют pug/partitials
 
 app/pug - всё, что касается pug, точка входа - index.pug
 
 app/pug/pages - шаблоны страницы
 
-app/pug/partitials - шаблоны компонентов
+app/pug/partials - шаблоны компонентов
 
 app/pug/layouts - разметка страниц
 
