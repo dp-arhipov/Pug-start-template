@@ -68,14 +68,25 @@ function styles() {
 }
 
 function images() {
-  return src(['app/images/**/*'])
-    .pipe(plumber())
+    const images =  src(['app/images/**/*'])
+        .pipe(plumber())
 
-    .pipe(newer('dist/images'))
-    .pipe(imagemin())
-    .pipe(size())
-    .pipe(dest('dist/images'))
-    .pipe(browserSync.stream());
+        .pipe(newer('dist/images'))
+        .pipe(imagemin())
+        .pipe(size())
+        .pipe(dest('dist/images'))
+        .pipe(browserSync.stream());
+
+    const favicon =  src(['app/images/favicon.*'])
+        .pipe(plumber())
+
+        .pipe(newer('dist/'))
+        .pipe(imagemin())
+        .pipe(size())
+        .pipe(dest('dist/'))
+        .pipe(browserSync.stream());
+
+    return merge(images, favicon);
 }
 
 function pug2html() {
