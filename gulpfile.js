@@ -79,7 +79,7 @@ function images() {
 }
 
 function pug2html() {
-  del('dist/pages', { force: true });
+  //del('dist/pages', { force: true });
   const index = src('app/pug/index.pug')
     .pipe(plumber())
 
@@ -152,7 +152,7 @@ function startwatch() {
   watch('app/scss/**/*', { usePolling: true }, styles);
   watch('app/pug/**/*.pug', { usePolling: true }, pug2html);
   watch('app/js/**/*.js', { usePolling: true }, scripts);
-  watch('app/images/src/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, images);
+  watch('app/images/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, images);
   watch(`dist/**/*.{${fileswatch}}`, { usePolling: true }).on('change', browserSync.reload);
 }
 
