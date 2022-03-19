@@ -5,7 +5,9 @@ const {
 } = require('gulp');
 
 // Вспомогательные для Gulp
+
 const rename = require('gulp-rename');// переименовывает выходной файл цепочки
+const babel = require('gulp-babel');
 const newer = require('gulp-newer');
 const rsync = require('gulp-rsync');
 const del = require('del');// удаляет указанные папки
@@ -22,7 +24,7 @@ const pug = require('gulp-pug');// добавляет поддержку pug
 
 // Компрессоры, конвертеры
 const htmlmin = require('gulp-html-minifier-terser');// уменьшает размер html файлов
-const purgecss = require('gulp-purgecss');// удаляет лишние классы после анализа html и js файлов
+const purgecss = require('gulp-purgecss');// удаляет лишние классы css после анализа html и js файлов
 const terser = require('gulp-terser');// чистит неиспользуемый js
 const ttf2woff = require('gulp-ttf2woff');// конвертирует шрифты из ttf в woff
 const ttf2woff2 = require('gulp-ttf2woff2');// конвертирует шрифты из ttf в woff2
@@ -44,7 +46,16 @@ function browsersync() {
 function scripts() {
   return src('app/js/index.js')
     .pipe(plumber())
-    .pipe(terser()) //--раскомментировать для PROD сборки
+    .pipe(babel({
+            presets: ['@babel/env']
+     }))
+    .pipe(terser({  //--раскомментировать для PROD сборки
+          ecma: 6,
+          keep_fnames: false,
+          mangle: {
+              toplevel: true,
+          },
+     }))
     .pipe(rename('app.min.js'))
     .pipe(size())
     .pipe(dest('dist/js'))

@@ -1,6 +1,6 @@
 {
   "name": "Optimized Pug template",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Optimized Pug template",
   "main": "index.js",
   "scripts": {
@@ -9,25 +9,14 @@
   "author": "Daniel Arhipov",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.2.2",
-    "babel-plugin-module-resolver": "^4.1.0",
-    "babel-plugin-root-import": "^6.6.0",
-    "babel-preset-latest": "^6.24.1",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
     "browsersync-ssi": "^0.2.4",
+    "browser-sync": "^2.26.14",
     "del": "^6.0.0",
-    "eslint": "^7.17.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-csso": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-dart-sass": "^1.0.2",
-    "gulp-gzip": "^1.4.2",
     "gulp-html-minifier-terser": "^6.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
@@ -41,16 +30,6 @@
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^3.0.0",
     "merge-stream": "^2.0.0",
-    "node-sass-magic-importer": "^5.3.2",
-    "panini": "^1.7.1",
-    "prettier": "2.2.1"
-
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
-    "@popperjs/core": "^2.6.0",
-    "accoutrement": "^2.2.0",
-    "browser-sync": "^2.26.14",
-    "gulp": "^4.0.2"
+    "node-sass-magic-importer": "^5.3.2"
   }
 }
