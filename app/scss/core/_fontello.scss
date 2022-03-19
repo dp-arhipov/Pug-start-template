@@ -1,4 +1,6 @@
-//здесь взяты только те иконки из fontawesome, которые используются
+//как использовать:
+//--идем на сайт https://fontello.com/ , выбираем нужные иконки, скачиваем архив, переносим fontello.woff/woff2 в app/fonts
+//--раскомментируем класс нужной иконки в низу файла, подключаем в html i.icon-class
 
 @font-face {
   font-family: 'fontello';
@@ -8,8 +10,8 @@
   font-style: normal;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
+[class^="icon-"]:before, [class*=" icon-"]:before{
+font-family: "fontello";
   font-style: normal;
   font-weight: normal;
  // speak: none;
