@@ -88,7 +88,7 @@ function images() {
         .pipe(dest('dist/images'))
         .pipe(browserSync.stream());
 
-    const favicon =  src(['app/images/favicon.*'])
+    const favicon =  src(['app/favicon.*'])
         .pipe(plumber())
 
         .pipe(newer('dist/'))
